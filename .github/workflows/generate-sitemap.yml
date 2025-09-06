@@ -15,9 +15,9 @@ jobs:
       with:
         fetch-depth: 0 
 
-    - name: Generate the sitemap
+    - name: generate-sitemap
       id: sitemap
-      uses: cicirello/generate-sitemap@v1
+      uses: cicirello/generate-sitemap@v1.10.3
       with:
         base-url-path: https://starblast-game.github.io/
 
