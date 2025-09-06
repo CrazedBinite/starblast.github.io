@@ -1,4 +1,4 @@
-name: Generate xml sitemap
+name: Generate API sitemap
 
 on:
   push:
@@ -20,7 +20,8 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://starblast-game.github.io/
-        additional-extensions: doc docx ppt pptx xls xlsx html txt
+        path-to-root: main
+        sitemap-format: txt
 
     - name: Output stats
       run: |
